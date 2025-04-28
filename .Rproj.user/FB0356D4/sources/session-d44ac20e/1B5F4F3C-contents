@@ -1,0 +1,66 @@
+# Load required libraries
+library(shiny)
+library(dplyr)
+
+# Load the results data frame
+results <- readRDS("tour_cost_results.rds")
+
+# Define UI
+ui <- fluidPage(
+  titlePanel("Southern Tour Cost Estimator"),
+  sidebarLayout(
+    sidebarPanel(
+      selectInput(
+        "num_adult",
+        "Number of Adults (age > 12):",
+        choices = 1:4,
+        selected = 1
+      ),
+      selectInput(
+        "num_children",
+        "Number of Children (age ≤ 12):",
+        choices = 0:3,
+        selected = 0
+      ),
+      selectInput(
+        "family_number",
+        "Total Number of Families:",
+        choices = 1:4,
+        selected = 1
+      ),
+      actionButton("get_quote", "Get Quote")
+    ),
+    mainPanel(
+      h3("Your Family's Tour Quote"),
+      verbatimTextOutput("quote_output")
+    )
+  )
+)
+
+# Define server
+server <- function(input, output) {
+  observeEvent(input$get_quote, {
+    # Filter results based on user input
+    quote <- results %>%
+      filter(
+        num_adult == as.integer(input$num_adult),
+        num_children == as.integer(input$num_children),
+        family_number == as.integer(input$family_number)
+      ) %>%
+      select(family_total_price, family_person_price) %>%
+      slice(1) # Take first row (all rows are identical for same composition)
+    
+    # Format the output
+    output$quote_output <- renderPrint({
+      if (nrow(quote) == 0) {
+        "No matching quote found. Please check your inputs."
+      } else {
+        cat("Total cost for family: ", sprintf("$%.2f", quote$family_total_price), "\n")
+        cat("Average cost per person: ", sprintf("$%.2f", quote$family_person_price), "\n")
+      }
+    })
+  })
+}
+
+# Run the application
+shinyApp(ui = ui, server = server)
