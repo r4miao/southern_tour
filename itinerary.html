@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>15天美东南深度游行程</title>
+  <title>14天美东南深度游行程</title>
   <style>
     * {
       margin: 0;
@@ -17,17 +17,75 @@
       padding: 20px;
       background-color: #fff;
       color: #1B4D3E;
+      padding-top: 120px; /* Increased to clear header and prevent title overlap */
     }
 
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #1B4D3E;
+      color: #FFFFFF;
+      padding: 2px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 68px;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    header .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    header img {
+      height: 120px;
+      max-width: 150px;
+      margin-right: 13px;
+      object-fit: contain;
+      padding: 0px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      padding: 0 0px;
+      font-weight: bold;
+    }
+
+    header nav ul {
+      display: flex;
+      list-style: none;
+      padding: 0 0px;
+    }
+
+    header nav a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 1.2rem;
+      padding: 2px 4px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    header nav a:hover {
+      color: #93c5fd; /* Equivalent to blue-300 */
+    }
+
+    /* Main content styling */
     h1 {
       text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 30px;
+      font-size: 2.2rem;
+      margin-bottom: 25px;
+      margin-top: 20px; /* Added to create space from header */
     }
 
     h2 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
+      font-size: 1.5rem;
+      margin-bottom: 2px;
       color: #fb6904;
     }
 
@@ -72,16 +130,72 @@
     .text {
       flex: 1 1 calc(100% - 420px);
     }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 10px 20px;
+      }
+
+      header .logo-container {
+        margin-bottom: 8px;
+      }
+
+      header img {
+        height: 64px;
+      }
+
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+      header nav a {
+        font-size: 1rem;
+        padding: 6px 10px;
+      }
+
+      body {
+        padding-top: 140px; /* Increased for mobile to clear header */
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-top: 30px;
+      }
+
+      .image {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .text {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
   </style>
 </head>
 <body>
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <img src="images/logo.png" alt="Southern Tours Logo">
+      <h1>深南行</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="aboutus.html">关于我们</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <h1>14天美东南深度游行程（修订版）</h1>
 
   <h2>概述</h2>
   <p>为期14天的沉浸式旅行，聚焦南卡罗来纳州、北卡罗来纳州、乔治亚州和田纳西州的自然、乡村、文化、与历史亮点。以南卡罗来纳州克莱姆森为基地，行程分为两个区域：高地（Upstate，阿巴拉契亚山地生活）、低地（Lowcountry，查尔斯顿和萨凡纳的沿海魅力）；涵盖7种社区主题：大学小镇、退休小镇、印第安小镇、文化小镇、历史小镇、历史名城，及区域大都市。</p>
   <p>活动包括小镇漫游、文化体验、农庄体验、森林木屋、户外活动（森林徒步、射击、骑马、白水漂流等）、酒庄美食及名胜游览。行程从克莱姆森开始和结束，包含亚特兰大（ATL）或格林维尔-斯帕坦堡（GSP）机场的接送服务。</p>
   <p>以下行程为参考行程，我们将充分考虑节日安排、天气状况及客户需求，在确保整体体验和主题不变的前提下灵活调整，并与客户进行深入沟通，量身打造专属行程。美国东南部旅游资源丰富，备选路线和活动充足。</p>
-
 
   <div class="day-section">
     <div class="image">
@@ -100,50 +214,42 @@
     <div class="text">
       <h2>第1-3天：克莱姆森</h2>
       <p>探索南方大学小镇、湖泊活动、射击体验、烧烤文化、农庄与高尔夫、格林维尔漫步、私家船湖游等。</p>
-	<p><strong>第1天</strong><br>
-    <u>上午：</u><br>
-    在颇具历史感的彭德尔顿（Pendleton）小镇的Village Bakery享用经典南方早餐（推荐饼干配肉汁）。<br>
-    参观克莱姆森大学校园（主校园、马场、农场、Calhoun House、球场），了解美式橄榄球文化。<br>
-    在<strong>哈特威尔湖（Lake Hartwell）</strong>租用皮划艇或桨板，体验水上活动。<br>
-    午餐：外卖披萨或自带轻食。<br><br>
-
-    <u>下午：</u><br>
-    在The Smoking Pig（或Fork Grove）享用地道南方烧烤午餐。<br>
-    在Deep South Defense体验射击及南方枪械文化（提供安全培训，尝试手枪或步枪）。如果时间凑巧，可以参加附近枪展（Gun Show）。<br><br>
-
-    <u>晚上：</u><br>
-    欢迎晚宴：在Calhoun Corner享用晚餐（高档南方菜）。<br>
-    Downtown Clemson 自由活动。<br>
-    住宿：克莱姆森Airbnb。<br><br>
-
-    <strong>第2天</strong><br>
-    <u>上午：</u><br>
-    在Patrick Square的Sunny Side Café享用经典南方早餐。导览美国老年退修社区。<br>
-    在克莱姆森大学的Walker Course打高尔夫（18洞球场，适合各水平玩家）。<br>
-    在颇具盛名的All In Coffee Shop享用咖啡和糕点。<br><br>
-
-    <u>下午：</u><br>
-    驱车前往格林维尔（约30分钟），最受欢迎美国南方城市之一。漫步主街（Main Street），游览精品店，参观Reedy河瀑布公园（Falls Park on the Reedy）。<br>
-    在Spill the Beans享用冰淇淋。<br>
-    体验Flying Rabbit Adventure（空中行走，适合家庭）及Double Stamp Brewery（大人品尝精酿啤酒，感受酒吧文化）。<br><br>
-
-    <u>晚上：</u><br>
-    返回克莱姆森，体验大学餐厅自助晚餐。<br>
-    自由活动：绕哈特威尔湖散步或在住宿处休息。<br>
-    住宿：同第1天。<br><br>
-
-    <strong>第3天</strong><br>
-    <u>上午：</u><br>
-    参观私人农庄，参与农庄活动（季节性采摘或互动体验）。<br>
-    在附近私人马场体验骑马。<br><br>
-
-    <u>下午：</u><br>
-    私家船畅游Lake Jocassee或Lake Keowee，可选浮潜或其他水上运动。<br><br>
-
-    <u>晚上：</u><br>
-    返回克莱姆森，自助烧烤。<br>
-    自由活动。<br>
-    住宿：同第1天。</p>
+      <p><strong>第1天</strong><br>
+      <u>上午：</u><br>
+      在颇具历史感的彭德尔顿（Pendleton）小镇的Village Bakery享用经典南方早餐（推荐饼干配肉汁）。<br>
+      参观克莱姆森大学校园（主校园、马场、农场、Calhoun House、球场），了解美式橄榄球文化。<br>
+      在<strong>哈特威尔湖（Lake Hartwell）</strong>租用皮划艇或桨板，体验水上活动。<br>
+      午餐：外卖披萨或自带轻食。<br><br>
+      <u>下午：</u><br>
+      在The Smoking Pig（或Fork Grove）享用地道南方烧烤午餐。<br>
+      在Deep South Defense体验射击及南方枪械文化（提供安全培训，尝试手枪或步枪）。如果时间凑巧，可以参加附近枪展（Gun Show）。<br><br>
+      <u>晚上：</u><br>
+      欢迎晚宴：在Calhoun Corner享用晚餐（高档南方菜）。<br>
+      Downtown Clemson 自由活动。<br>
+      住宿：克莱姆森Airbnb。<br><br>
+      <strong>第2天</strong><br>
+      <u>上午：</u><br>
+      在Patrick Square的Sunny Side Café享用经典南方早餐。导览美国老年退修社区。<br>
+      在克莱姆森大学的Walker Course打高尔夫（18洞球场，适合各水平玩家）。<br>
+      在颇具盛名的All In Coffee Shop享用咖啡和糕点。<br><br>
+      <u>下午：</u><br>
+      驱车前往格林维尔（约30分钟），最受欢迎美国南方城市之一。漫步主街（Main Street），游览精品店，参观Reedy河瀑布公园（Falls Park on the Reedy）。<br>
+      在Spill the Beans享用冰淇淋。<br>
+      体验Flying Rabbit Adventure（空中行走，适合家庭）及Double Stamp Brewery（大人品尝精酿啤酒，感受酒吧文化）。<br><br>
+      <u>晚上：</u><br>
+      返回克莱姆森，体验大学餐厅自助晚餐。<br>
+      自由活动：绕哈特威尔湖散步或在住宿处休息。<br>
+      住宿：同第1天。<br><br>
+      <strong>第3天</strong><br>
+      <u>上午：</u><br>
+      参观私人农庄，参与农庄活动（季节性采摘或互动体验）。<br>
+      在附近私人马场体验骑马。<br><br>
+      <u>下午：</u><br>
+      私家船畅游Lake Jocassee或Lake Keowee，可选浮潜或其他水上运动。<br><br>
+      <u>晚上：</u><br>
+      返回克莱姆森，自助烧烤。<br>
+      自由活动。<br>
+      住宿：同第1天。</p>
     </div>
   </div>
 
@@ -154,68 +260,56 @@
     <div class="text">
       <h2>第4-7天：Murphy至大雾山与阿什维尔</h2>
       <p>体验南方退休小镇，旅游小镇，印第安小镇，酒庄品酒、白水漂流、casino、国家公园徒步、多莉伍德游乐、阿什维尔艺术探索与比特摩尔庄园。</p>
-	<p><strong>第4天</strong><br>
-    <u>上午：</u><br>
-    从克莱姆森出发前往北卡罗来纳州Murphy（约2.5小时车程）。<br>
-    沿途参观酒庄（如Nottely River Valley Vineyards），品尝葡萄酒（霞多丽、赤霞珠）。<br>
-    游览乔治亚州Hiawassee的贝尔山（Bell Mountain），短途徒步或开车登顶观景。<br>
-    游览Hiawassee（典型南方退休小镇，retirement town）。<br><br>
-
-    <u>下午：</u><br>
-    午餐：沿途餐厅（推荐当地南方菜）。<br>
-    白水漂流（Nantahala Rafting）。<br>
-    入住山上木屋，自由活动。<br><br>
-
-    <u>晚上：</u><br>
-    木屋烧烤晚宴，游戏或放松。<br>
-    住宿：Murphy山上木屋。<br><br>
-
-    <strong>第5天</strong><br>
-    <u>上午：</u><br>
-    驱车前往大雾山国家公园（约2.5小时至田纳西州加特林堡）。<br>
-    途径Nantahala National Forest，经停印第安小镇Cherokee（约1小时）。<br>
-    访问Cherokee Casino，体验印第安自治领地赌场经济与文化（2小时）。<br><br>
-
-    <u>午餐</u><br>
-    自由选择<br><br>
-
-    <u>下午：</u><br>
-    进入大雾山国家公园（约1小时至加特林堡），横穿国家森林公园。<br>
-    挑战Alum Cave Trail徒步（11英里往返，欣赏Alum Cave Bluffs与Mount LeConte景观）。<br><br>
-
-    <u>晚上：</u><br>
-    小木屋放松、烧烤。<br>
-    住宿：Gatlinburg附近山上木屋。<br><br>
-
-    <strong>第6天</strong><br>
-    <u>全天：</u><br>
-    参观加特林堡（典型旅游小镇）。<br>
-    游览多莉伍德主题公园（Dollywood），体验南方文化、音乐表演与游乐设施。<br>
-    Smoky Mountain Ziplines。<br>
-    在Wild Plum Tea Room享用咖啡和糕点。<br>
-    午餐：自费（推荐加特林堡当地餐厅，如The Peddler Steakhouse）。<br><br>
-
-    <u>晚上：</u><br>
-    烧烤晚宴, 乡村音乐<br>
-    住宿：同第5天或RV Camping。<br><br>
-
-    <strong>第7天</strong><br>
-    <u>上午：</u><br>
-    经蓝岭公路（Blue Ridge Parkway）驱车至阿什维尔（约2小时），途中在Craggy Pinnacle Trail短途徒步。<br>
-    在Tupelo Honey享用南方早午餐（推荐蜂蜜饼干）。<br><br>
-
-    <u>下午：</u><br>
-    参观比特摩尔庄园（Biltmore Estate），游览庄园、花园及酒庄品酒。<br>
-    探索River Arts District，参观艺术家工作室，品尝本地精酿啤酒（自费）。<br>
-    返程经过Traveler's Rest。<br><br>
-
-    <u>晚上：</u><br>
-    返回克莱姆森（约2小时）。<br>
-    在Sardi's Den享用晚餐（肋排，南方休闲氛围，自费）。<br>
-    住宿：克莱姆森Airbnb或旅馆。</p>
+      <p><strong>第4天</strong><br>
+      <u>上午：</u><br>
+      从克莱姆森出发前往北卡罗来纳州Murphy（约2.5小时车程）。<br>
+      沿途参观酒庄（如Nottely River Valley Vineyards），品尝葡萄酒（霞多丽、赤霞珠）。<br>
+      游览乔治亚州Hiawassee的贝尔山（Bell Mountain），短途徒步或开车登顶观景。<br>
+      游览Hiawassee（典型南方退休小镇，retirement town）。<br><br>
+      <u>下午：</u><br>
+      午餐：沿途餐厅（推荐当地南方菜）。<br>
+      白水漂流（Nantahala Rafting）。<br>
+      入住山上木屋，自由活动。<br><br>
+      <u>晚上：</u><br>
+      木屋烧烤晚宴，游戏或放松。<br>
+      住宿：Murphy山上木屋。<br><br>
+      <strong>第5天</strong><br>
+      <u>上午：</u><br>
+      驱车前往大雾山国家公园（约2.5小时至田纳西州加特林堡）。<br>
+      途径Nantahala National Forest，经停印第安小镇Cherokee（约1小时）。<br>
+      访问Cherokee Casino，体验印第安自治领地赌场经济与文化（2小时）。<br><br>
+      <u>午餐</u><br>
+      自由选择<br><br>
+      <u>下午：</u><br>
+      进入大雾山国家公园（约1小时至加特林堡），横穿国家森林公园。<br>
+      挑战Alum Cave Trail徒步（11英里往返，欣赏Alum Cave Bluffs与Mount LeConte景观）。<br><br>
+      <u>晚上：</u><br>
+      小木屋放松、烧烤。<br>
+      住宿：Gatlinburg附近山上木屋。<br><br>
+      <strong>第6天</strong><br>
+      <u>全天：</u><br>
+      参观加特林堡（典型旅游小镇）。<br>
+      游览多莉伍德主题公园（Dollywood），体验南方文化、音乐表演与游乐设施。<br>
+      Smoky Mountain Ziplines。<br>
+      在Wild Plum Tea Room享用咖啡和糕点。<br>
+      午餐：自费（推荐加特林堡当地餐厅，如The Peddler Steakhouse）。<br><br>
+      <u>晚上：</u><br>
+      烧烤晚宴, 乡村音乐<br>
+      住宿：同第5天或RV Camping。<br><br>
+      <strong>第7天</strong><br>
+      <u>上午：</u><br>
+      经蓝岭公路（Blue Ridge Parkway）驱车至阿什维尔（约2小时），途中在Craggy Pinnacle Trail短途徒步。<br>
+      在Tupelo Honey享用南方早午餐（推荐蜂蜜饼干）。<br><br>
+      <u>下午：</u><br>
+      参观比特摩尔庄园（Biltmore Estate），游览庄园、花园及酒庄品酒。<br>
+      探索River Arts District，参观艺术家工作室，品尝本地精酿啤酒（自费）。<br>
+      返程经过Traveler's Rest。<br><br>
+      <u>晚上：</u><br>
+      返回克莱姆森（约2小时）。<br>
+      在Sardi's Den享用晚餐（肋排，南方休闲氛围，自费）。<br>
+      住宿：克莱姆森Airbnb或旅馆。</p>
     </div>
   </div>
-
 
   <div class="day-section">
     <div class="image">
@@ -224,48 +318,40 @@
     <div class="text">
       <h2>第8-10天：查尔斯顿</h2>
       <p>探索南方沿海历史与文化，皮划艇、种植园、历史遗迹、特色历史小镇。</p>
-	    <p><strong>第8天</strong><br>
-    <u>上午：</u><br>
-    从克莱姆森驱车至查尔斯顿（约3.5小时）。<br>
-    沿途经停Newberry（文化小镇），参观Newberry Opera House（了解历史建筑）。<br>
-    早午餐：Newberry当地餐厅（如The Palms Grill）。<br><br>
-
-    <u>下午：</u><br>
-    抵达查尔斯顿，参观USS Yorktown，参加鬼魂导览游。<br>
-    在Shem Creek体验皮划艇，探索沼泽地生态。<br><br>
-
-    <u>晚上：</u><br>
-    在The Ordinary享用晚餐（海鲜和生蚝）。<br>
-    自由活动，漫步查尔斯顿市中心。<br>
-    住宿：查尔斯顿市中心Bed & Breakfast（如The Dewberry）。<br><br>
-
-    <strong>第9天</strong><br>
-    <u>上午：</u><br>
-    在Harken Cafe享用早餐。<br>
-    游览历史区，漫步彩虹街（Rainbow Row）、Battery及法国区，可选马车游览（Palmetto Carriage Works）。<br>
-    乘渡轮参观Fort Sumter国家纪念碑，了解南北战争历史。<br><br>
-
-    <u>下午：</u><br>
-    参观Magnolia种植园，探索南方种植园历史。<br>
-    午餐：The Wreck of the Richard & Charlene（新鲜海鲜）。<br>
-    驱车前往Beauford，入住Bed & Breakfast。<br><br>
-
-    <u>晚上：</u><br>
-    Beauford自由活动，体验当地美食。<br>
-    住宿：Beauford Bed & Breakfast。<br><br>
-
-    <strong>第10天</strong><br>
-    <u>上午：</u><br>
-    在Page's Okra Grill享用早餐（南方家常菜）。<br>
-    驱车前往萨凡纳（约2.5小时），途中参观Charleston Tea Garden。<br><br>
-
-    <u>下午/晚上：</u><br>
-    午餐：路上简餐。<br>
-    抵达萨凡纳，入住历史旅馆（如The Marshall House）。<br>
-    自由活动。 </p>
+      <p><strong>第8天</strong><br>
+      <u>上午：</u><br>
+      从克莱姆森驱车至查尔斯顿（约3.5小时）。<br>
+      沿途经停Newberry（文化小镇），参观Newberry Opera House（了解历史建筑）。<br>
+      早午餐：Newberry当地餐厅（如The Palms Grill）。<br><br>
+      <u>下午：</u><br>
+      抵达查尔斯顿，参观USS Yorktown，参加鬼魂导览游。<br>
+      在Shem Creek体验皮划艇，探索沼泽地生态。<br><br>
+      <u>晚上：</u><br>
+      在The Ordinary享用晚餐（海鲜和生蚝）。<br>
+      自由活动，漫步查尔斯顿市中心。<br>
+      住宿：查尔斯顿市中心Bed & Breakfast（如The Dewberry）。<br><br>
+      <strong>第9天</strong><br>
+      <u>上午：</u><br>
+      在Harken Cafe享用早餐。<br>
+      游览历史区，漫步彩虹街（Rainbow Row）、Battery及法国区，可选马车游览（Palmetto Carriage Works）。<br>
+      乘渡轮参观Fort Sumter国家纪念碑，了解南北战争历史。<br><br>
+      <u>下午：</u><br>
+      参观Magnolia种植园，探索南方种植园历史。<br>
+      午餐：The Wreck of the Richard & Charlene（新鲜海鲜）。<br>
+      驱车前往Beauford，入住Bed & Breakfast。<br><br>
+      <u>晚上：</u><br>
+      Beauford自由活动，体验当地美食。<br>
+      住宿：Beauford Bed & Breakfast。<br><br>
+      <strong>第10天</strong><br>
+      <u>上午：</u><br>
+      在Page's Okra Grill享用早餐（南方家常菜）。<br>
+      驱车前往萨凡纳（约2.5小时），途中参观Charleston Tea Garden。<br><br>
+      <u>下午/晚上：</u><br>
+      午餐：路上简餐。<br>
+      抵达萨凡纳，入住历史旅馆（如The Marshall House）。<br>
+      自由活动。 </p>
     </div>
   </div>
-
 
   <div class="day-section">
     <div class="image">
@@ -274,32 +360,27 @@
     <div class="text">
       <h2>第11-12天：萨凡纳与希尔顿头岛</h2>
       <p>历史街区导览，橡树大道徒步、家庭式南方餐厅、野生动物保护区、返回克莱姆森。</p>
-	    <p><strong>第11天</strong><br>
-    <u>上午：</u><br>
-    在Clary's Café享用早餐（推荐蟹饼班尼迪克蛋）。<br>
-    导览步行游览萨凡纳历史区，包括Forsyth公园、<strong>河街（River Street）</strong>及橡树大道。<br><br>
-
-    <u>下午：</u><br>
-    参观Wormsloe历史遗址，漫步橡树大道，了解乔治亚殖民历史。<br>
-    午餐：在Mrs. Wilkes Dining Room（家庭式南方盛宴）。<br><br>
-
-    <u>晚上：</u><br>
-    在The Olde Pink House享用晚餐（推荐炸绿番茄）。<br>
-    自由活动。<br>
-    住宿：同第11天。<br><br>
-
-    <strong>第12天</strong><br>
-    <u>上午：</u><br>
-    驱车前往希尔顿头岛，南卡（约1.5小时）。<br>
-    在Palmetto Bay Sunrise Café享用早餐。<br>
-    游览Pinckney岛国家野生动物保护区，导览徒步，观察鸟类及鳄鱼。<br><br>
-
-    <u>下午：</u><br>
-    驱车返回克莱姆森（约4.5小时），沿途经125号公路无人区，短暂停留漫步。<br><br>
-
-    <u>晚上：</u><br>
-    途中在安德森的Southern Thyme Café享用晚餐。<br>
-    住宿：克莱姆森Airbnb或旅馆。</p>
+      <p><strong>第11天</strong><br>
+      <u>上午：</u><br>
+      在Clary's Café享用早餐（推荐蟹饼班尼迪克蛋）。<br>
+      导览步行游览萨凡纳历史区，包括Forsyth公园、<strong>河街（River Street）</strong>及橡树大道。<br><br>
+      <u>下午：</u><br>
+      参观Wormsloe历史遗址，漫步橡树大道，了解乔治亚殖民历史。<br>
+      午餐：在Mrs. Wilkes Dining Room（家庭式南方盛宴）。<br><br>
+      <u>晚上：</u><br>
+      在The Olde Pink House享用晚餐（推荐炸绿番茄）。<br>
+      自由活动。<br>
+      住宿：同第11天。<br><br>
+      <strong>第12天</strong><br>
+      <u>上午：</u><br>
+      驱车前往希尔顿头岛，南卡（约1.5小时）。<br>
+      在Palmetto Bay Sunrise Café享用早餐。<br>
+      游览Pinckney岛国家野生动物保护区，导览徒步，观察鸟类及鳄鱼。<br><br>
+      <u>下午：</u><br>
+      驱车返回克莱姆森（约4.5小时），沿途经125号公路无人区，短暂停留漫步。<br><br>
+      <u>晚上：</u><br>
+      途中在安德森的Southern Thyme Café享用晚餐。<br>
+      住宿：克莱姆森Airbnb或旅馆。</p>
     </div>
   </div>
 
@@ -310,41 +391,36 @@
     <div class="text">
       <h2>第13-14天：亚特兰大城市文化</h2>
       <p>马丁路德金纪念园、可口可乐世界、水族馆、购物、美食广场、CNN总部、植物园、奥特莱斯。</p>
-	<p><strong>第13天</strong><br>
-    <u>上午：</u><br>
-    驱车前往亚特兰大（约2小时），途经Duluth，参观当地华人超市，享用早午餐。<br>
-    参观马丁·路德·金国家历史公园，游览民权领袖出生地及埃比尼泽浸信会教堂。<br>
-    游览可口可乐世界，品尝全球100+种口味饮料。<br><br>
-
-    <u>下午：</u><br>
-    游览乔治亚水族馆，观赏鲸鲨及海豚。<br>
-    在Ponce City Market购物及用餐（美食广场）。<br><br>
-
-    <u>晚上：</u><br>
-    在The Optimist享用晚餐（海鲜及南方生蚝）。<br>
-    可选：夜晚游览百年奥林匹克公园，欣赏城市灯光。<br>
-    住宿：亚特兰大市中心酒店（如Hilton Atlanta）。<br><br>
-
-    <strong>第14天</strong><br>
-    <u>上午：</u><br>
-    参观CNN总部，体验新闻制作幕后。<br>
-    游览亚特兰大植物园，探索树冠步道。<br>
-    在Taproom Coffee享用咖啡。<br><br>
-
-    <u>下午：</u><br>
-    前往北乔治亚奥特莱斯（约1小时），国际游客享免税购物。<br>
-    午餐：在The Varsity（推荐辣椒热狗）。<br><br>
-
-    <u>晚上：</u><br>
-    告别晚餐：在亚特兰大的South City Kitchen（高档南方美食）。<br>
-    根据返程安排：从亚特兰大出发的留在亚特兰大酒店；从格林维尔出发的返回克莱姆森（约2小时）。<br>
-    住宿：亚特兰大酒店或克莱姆森Airbnb/旅馆。</p>
+      <p><strong>第13天</strong><br>
+      <u>上午：</u><br>
+      驱车前往亚特兰大（约2小时），途经Duluth，参观当地华人超市，享用早午餐。<br>
+      参观马丁·路德·金国家历史公园，游览民权领袖出生地及埃比尼泽浸信会教堂。<br>
+      游览可口可乐世界，品尝全球100+种口味饮料。<br><br>
+      <u>下午：</u><br>
+      游览乔治亚水族馆，观赏鲸鲨及海豚。<br>
+      在Ponce City Market购物及用餐（美食广场）。<br><br>
+      <u>晚上：</u><br>
+      在The Optimist享用晚餐（海鲜及南方生蚝）。<br>
+      可选：夜晚游览百年奥林匹克公园，欣赏城市灯光。<br>
+      住宿：亚特兰大市中心酒店（如Hilton Atlanta）。<br><br>
+      <strong>第14天</strong><br>
+      <u>上午：</u><br>
+      参观CNN总部，体验新闻制作幕后。<br>
+      游览亚特兰大植物园，探索树冠步道。<br>
+      在Taproom Coffee享用咖啡。<br><br>
+      <u>下午：</u><br>
+      前往北乔治亚奥特莱斯（约1小时），国际游客享免税购物。<br>
+      午餐：在The Varsity（推荐辣椒热狗）。<br><br>
+      <u>晚上：</u><br>
+      告别晚餐：在亚特兰大的South City Kitchen（高档南方美食）。<br>
+      根据返程安排：从亚特兰大出发的留在亚特兰大酒店；从格林维尔出发的返回克莱姆森（约2小时）。<br>
+      住宿：亚特兰大酒店或克莱姆森Airbnb/旅馆。</p>
     </div>
   </div>
 
   <div class="day-section">
     <div class="image">
-     <!-- <img src="images/placeholder.jpg" alt="第15天图片"> -->
+      <!-- <img src="images/placeholder.jpg" alt="第15天图片"> -->
     </div>
     <div class="text">
       <h2>第15天：离境</h2>
