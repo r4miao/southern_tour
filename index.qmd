@@ -5,26 +5,29 @@ format: html
 editor: visual
 ---
 
- 
-<div style="display: flex; align-items: center; gap: 10px;">
+::: {style="display: flex; align-items: center; gap: 10px;"}
+::: {style="font-size: 18px;"}
+```         
+👉 Click here to quote:
+```
+:::
 
-  <div style="font-size: 18px;">
-    👉 Click here to quote:
-  </div>
-
-  <a href="https://r4miao.shinyapps.io/southern_tour_customer_quote_app/" target="_blank">
-    <button style="background-color: #4CAF50; border: none; color: white; padding: 10px 20px;
+<a href="https://r4miao.shinyapps.io/southern_tour_customer_quote_app/" target="_blank"> <button style="background-color: #4CAF50; border: none; color: white; padding: 10px 20px;
     text-align: center; text-decoration: none; display: inline-block; font-size: 16px;
-    margin: 4px 2px; cursor: pointer;">
-      Southern Tour Price Quote Tool
-    </button>
-  </a>
-
-</div>
-
-
+    margin: 4px 2px; cursor: pointer;"> Southern Tour Price Quote Tool </button> </a>
+:::
 
 ------------------------------------------------------------------------
+
+# 关于我们
+
+我们是一群长期在美国南方小镇生活、学习、工作的华人，深深热爱这片土地的宁静、美好与人情味。在这里，我们体会到了不同于城市的生活节奏，也看到了这片土地被主流叙事所忽略的一面。我们希望通过这个平台，带领更多人走进真实的美国南方，感受其独特的文化魅力和自然之美。
+
+与好莱坞的浮华、加州的喧嚣或纽约的快节奏不同，美国南方有着恬静的慢生活、广袤纯净的自然环境、淳朴热情的邻里关系、充满烟火气的本地美食，以及让人心情舒畅的乡村音乐。这些看似平凡却动人心弦的元素，正是我们希望你能亲身体验的美国。
+
+我们精心策划的游览线路强调**小众化与深度体验**，每次行程严格控制在**4个家庭以内**，确保旅程私密舒适、互动充分。我们坚持**全程导览 + 半自助模式**，在为你安排好主要行程和特色活动的同时，也保留部分时间由游客之间、或与我们协商定制专属体验，兼顾引导与自由，仪式感与灵活性。
+
+欢迎加入我们，一起探索美国南方动人真实的生活风景！
 
 # 美国南方深度游两周行程（克莱姆森基地）
 
