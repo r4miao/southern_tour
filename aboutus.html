@@ -29,17 +29,47 @@
     .tab-content.active {
       display: block;
     }
+    /* Hamburger menu styles */
+    .hamburger {
+      display: none;
+      cursor: pointer;
+      font-size: 1.5rem;
+      color: white;
+    }
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+      }
+      header nav ul {
+        display: none;
+        flex-direction: column;
+        space-x-0;
+        width: 100%;
+        background-color: #1B4D3E;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        padding: 1rem;
+      }
+      header nav ul.active {
+        display: flex;
+      }
+      header nav ul li {
+        margin-bottom: 0.5rem;
+      }
+    }
   </style>
 </head>
 <body class="bg-gray-100 font-sans">
   <!-- Header -->
-  <header class="text-white p-4 flex justify-between items-center fixed w-full top-0 z-10 h-16" style="background-color: #1B4D3E;">
+  <header class="text-white p-4 md:p-4 flex justify-between items-center fixed w-full top-0 z-10 h-16 md:h-16" style="background-color: #1B4D3E;">
     <div class="flex items-center">
-      <img src="images/logo.png" alt="Southern Tours Logo" class="h-16 mr-4">
-      <h1 class="text-xl font-bold" style="font-family: 'Kaiti SC', 'KaiTi', '楷体', serif;">深南行</h1>
+      <img src="images/logo.png" alt="Southern Tours Logo" class="h-12 md:h-16 mr-2 md:mr-4">
+      <h1 class="text-lg md:text-xl font-bold" style="font-family: 'Kaiti SC', 'KaiTi', '楷体', serif;">深南行</h1>
     </div>
+    <span class="hamburger">☰</span>
     <nav>
-      <ul class="flex space-x-6">
+      <ul class="flex space-x-6 md:space-x-6">
         <li><a href="#" class="tab-link font-semibold hover:text-blue-300 active" data-tab="about">关于我们</a></li>
         <li><a href="itinerary.html" class="font-semibold hover:text-blue-300" data-tab="itinerary">在路上</a></li>
         <li><a href="https://map.baidu.com/poi/%E5%85%8B%E8%8E%B1%E5%A7%86%E6%A3%AE/@-9221546.965000007,4096405.47,5.98z?uid=28a32a1c961641927369d3fd&ugc_type=3&ugc_ver=1&device_ratio=2&compat=1&pcevaname=pc4.1&querytype=detailConInfo&da_src=shareurl" class="tab-link font-semibold hover:text-blue-300" data-tab="where-we-are">我们的方位</a></li>
@@ -57,25 +87,10 @@
       <div class="overlay-text text-white">
         <h2 class="text-2xl font-bold mb-4" style="font-family: 'Kaiti SC', 'KaiTi', '楷体', serif;">关于我们</h2>
         <p class="text-base" style="font-family: 'Kaiti SC', 'KaiTi', '楷体', serif;">
-          我们是一群长期在美国南方小镇生活、学习、工作的华人，深深热爱这片土地的宁静、美好与人情味。在这里，我们体会到了不同于城市的生活节奏，也看到了这片土地被主流叙事所忽略的一面。我们希望通过这个平台，带领更多人走进真实的美国南方，感受其独特的文化魅力和自然之美。<br><br>
-          与好莱坞的浮华、加州的喧嚣或纽约的快节奏不同，美国南方有着恬静的慢生活、广袤纯净的自然环境、淳朴热情的邻里关系、充满烟火气的本地美食，以及让人心情舒畅的乡村音乐。这些看似平凡却动人心弦的元素，正是我们希望你能亲身体验的美国。<br><br>
+          我们是一群长期在美国南方小镇生活、学习、工作的华人，深深热爱这片土地的宁静、美好与人情味。在这里，我们体会到了不同于城市的生活节奏，也看到了这片土地被主流叙事所忽略的一面。我们希望通过这个平台，带领更多人走进真实的美国南方，感受其独特的多元文化和自然之美。<br><br>
+          与好莱坞的浮华、加州的喧嚣或纽约的快节奏不同，美国南方有着恬静的慢生活、广袤纯净而又风格迥异的自然环境、淳朴热情的邻里关系、充满烟火气的本地美食，以及令人神往的乡村音乐。这些看似平凡却动人心弦的元素，正是我们希望你能亲身体验的美国。<br><br>
           我们精心策划的游览线路强调小众化与深度体验，每次行程严格控制在4个家庭以内，确保旅程私密舒适、互动充分。我们坚持全程导览 + 半自助模式，在为你安排好主要行程和特色活动的同时，也保留部分时间由游客之间、或与我们协商定制专属体验，兼顾引导与自由，仪式感与灵活性。<br><br>
           欢迎加入我们，一起探索美国南方动人真实的生活风景！
-        </p>
-      </div>
-    </section>
-
-    <!-- Itinerary Tab -->
-    <section id="itinerary" class="tab-content p-8">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl font-bold mb-4">Tour Itinerary</h2>
-        <p class="text-lg mb-4">
-          Our carefully planned itinerary takes you through the heart of the South. From charming small towns to vibrant cities, each day is packed with exciting experiences. This is a placeholder for the detailed itinerary, which will include daily schedules, accommodations, and activities.
-        </p>
-        <p class="text-lg">
-          Explore more about our tours:
-          <a href="#" class="text-blue-600 hover:underline tab-link" data-tab="about">Back to About Us</a> |
-          <a href="#" class="text-blue-600 hover:underline tab-link" data-tab="where-we-are">Where We Are</a>
         </p>
       </div>
     </section>
@@ -115,6 +130,10 @@
         });
         link.classList.add('active');
       });
+    });
+    // Hamburger menu toggle
+    document.querySelector('.hamburger').addEventListener('click', () => {
+      document.querySelector('header nav ul').classList.toggle('active');
     });
   </script>
 </body>
