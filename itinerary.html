@@ -17,7 +17,7 @@
       padding: 20px;
       background-color: #fff;
       color: #1B4D3E;
-      padding-top: 120px; /* Increased to clear header and prevent title overlap */
+      padding-top: 100px; /* Adjusted to clear header */
     }
 
     /* Header */
@@ -26,13 +26,14 @@
       top: 0;
       left: 0;
       width: 100%;
+      height: 68px;
       background-color: #1B4D3E;
       color: #FFFFFF;
-      padding: 2px 20px;
+      padding: 8px 16px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 68px;
+      min-height: 60px;
       z-index: 1000;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
@@ -40,33 +41,50 @@
     header .logo-container {
       display: flex;
       align-items: center;
+      min-width: 120px;
     }
 
     header img {
-      height: 120px;
-      max-width: 150px;
-      margin-right: 13px;
+      height: 60px;
+      max-width: 100px;
+      margin-right: 8px;
       object-fit: contain;
       padding: 0px;
     }
 
     header h1 {
-      font-size: 2rem;
-      padding: 0 0px;
+      font-size: 1.8rem;
+      padding: 0 4px;
       font-weight: bold;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #FFFFFF;
+    }
+
+    header nav {
+      display: flex;
+      align-items: center;
     }
 
     header nav ul {
       display: flex;
       list-style: none;
-      padding: 0 0px;
+      padding: 0 8px;
+    }
+
+    header nav ul.active {
+      display: flex;
     }
 
     header nav a {
       color: #FFFFFF;
       text-decoration: none;
-      font-size: 1.2rem;
-      padding: 2px 4px;
+      font-size: 1.1rem;
+      padding: 4px 8px;
       font-weight: 600;
       transition: color 0.3s ease;
     }
@@ -134,29 +152,45 @@
     /* Responsive design */
     @media (max-width: 768px) {
       header {
-        flex-direction: column;
-        padding: 10px 20px;
+        padding: 6px 12px;
+        min-height: 50px;
+        flex-wrap: wrap;
       }
 
       header .logo-container {
-        margin-bottom: 8px;
+        min-width: 100px;
       }
 
       header img {
-        height: 64px;
+        height: 40px;
+        max-width: 80px;
+        margin-right: 6px;
       }
 
       header h1 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
+        padding: 0 2px;
+      }
+
+      .hamburger {
+        display: block;
+      }
+
+      header nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 8px 0;
+        background-color: #1B4D3E;
       }
 
       header nav a {
         font-size: 1rem;
-        padding: 6px 10px;
+        padding: 6px 12px;
       }
 
       body {
-        padding-top: 140px; /* Increased for mobile to clear header */
+        padding-top: 120px; /* Adjusted for mobile header */
       }
 
       h1 {
@@ -183,12 +217,21 @@
       <img src="images/logo.png" alt="Southern Tours Logo">
       <h1>深南行</h1>
     </div>
+    <span class="hamburger">☰</span>
     <nav>
       <ul>
         <li><a href="aboutus.html">关于我们</a></li>
+        <li><a href="" target="_blank">在路上</a></li>
+        <li><a href="https://map.baidu.com/poi/%E5%85%8B%E8%8E%B1%E5%A7%86%E6%A3%AE/@-9221546.965000007,4096405.47,5.98z?uid=28a32a1c961641927369d3fd&ugc_type=3&ugc_ver=1&device_ratio=2&compat=1&pcevaname=pc4.1&querytype=detailConInfo&da_src=shareurl" target="_blank">我们的方位</a></li>
       </ul>
     </nav>
   </header>
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', () => {
+      document.querySelector('header nav ul').classList.toggle('active');
+    });
+  </script>
 
   <h1>14天美东南深度游行程（修订版）</h1>
 
@@ -395,7 +438,7 @@
       <u>上午：</u><br>
       驱车前往亚特兰大（约2小时），途经Duluth，参观当地华人超市，享用早午餐。<br>
       参观马丁·路德·金国家历史公园，游览民权领袖出生地及埃比尼泽浸信会教堂。<br>
-      游览可口可乐世界，品尝全球100+种口味饮料。<br><br>
+      游览可口可乐世界，品尝全球100+种口味饮料16px;">可口可乐世界，品尝全球100+种口味饮料。<br><br>
       <u>下午：</u><br>
       游览乔治亚水族馆，观赏鲸鲨及海豚。<br>
       在Ponce City Market购物及用餐（美食广场）。<br><br>
